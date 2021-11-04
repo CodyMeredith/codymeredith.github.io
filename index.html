@@ -1,9 +1,40 @@
 <!doctype html>
 <html lang="en-us">
+
 <head>
-  <title>Your Name</title>
+  <title>Cody Meredith - WDD230</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="stylesheet.css" rel="stylesheet">
 </head>
+
 <body>
- <h1>Your Name</h1>
+  <header>
+    <img id="profile_picture" src="images/cody.png" alt="Cody Meredith">
+    <h1 class="indented">Cody M. Meredith</h1>
+  </header>
+  <section class="course_list">
+    <h2>WDD 230: Assignment Portal</h2>
+  </section>
+  <hr>
+  <ul>
+    <li>Lesson 01: <a href="#">Course Assignments Portal</a></li>
+    <li>Lesson 01: <a href="#">Design Principles Document</a></li>
+    <li>...</li>
+  </ul>
+  <footer class="footer_info">
+    <div class="indented">
+      <p>&copy;<span id="current_year"></span> | Cody M. Meredith | Idaho | <a href="https://www.byui.edu/online"
+          target="_blank">BYUI Online Learning</a></p>
+    </div>
+    <div class="last_updated">
+      <p>Last Updated: <span id="last_updated"></span></p>
+    </div>
+  </footer>
+
+  <script src="js/date.js"></script>
+
 </body>
+
 </html>
