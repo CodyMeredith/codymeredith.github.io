@@ -1,44 +1,40 @@
 body {
-    display: block;
     font-family: "Roboto", serif;
-    max-width: 75%;
+    max-width: 50%;
     margin: 0 auto;
 }
 
 img {
-    float: right;
     width: 300px;
     height: auto;
-    border-radius: 0 25px 0 0;
     box-shadow: 0 4px 8px 0 rgba(235, 232, 232, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
 }
 
-header {
+header, footer {
     background-color: rgba(31,41,55);
-    border-radius: 25px;
     padding: 1%;
+    color: white;
+    text-align: center;
 }
 
 h1 {
     color: white;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 ul {
     font-size: 1.5em;
 }
 
-footer {
+/* footer {
     background-color: rgba(31,41,55);
-    border-radius: 25px;
     padding: 1% 0;
     color: white;
-}
+} */
 
 footer a {
     color: inherit;

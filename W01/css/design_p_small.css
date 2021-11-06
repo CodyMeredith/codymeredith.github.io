@@ -1,0 +1,48 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+header, footer {
+    background-color: rgba(31,41,55);
+    color: white;
+    text-align: center;
+    padding: 2px 0;
+}
+
+/* phone or baseline view *******************/
+
+main {
+    max-width: 1500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+main section {
+    margin: .5rem;
+    border: 1px solid rgba(31,41,55);
+    background-color: lightgray;
+    border-radius: 15px;
+}
+
+main section div {
+    background-color: rgba(31,41,55);
+    color: white;
+    padding-left: 2em;
+}
+
+main section img {
+    margin: .5rem;
+    border: 1px solid rgba(31,41,55);
+    max-width: 95%;
+    height: auto;
+}
+
+.indent-text {
+    padding-left: 2em;
+}
+
+.link_highlight {
+    color: inherit;
+}
