@@ -2,6 +2,7 @@ header, nav, main, footer {
     font-family: "Roboto", serif;
     max-width: 900px;
     margin: 0 auto;
+    background-color: #F6EABE;
 }
 
 h1 {
@@ -20,6 +21,10 @@ p {
     font-size: 16px;
 }
 
+section {
+    padding: 2rem;
+}
+
 header img {
     width: 200px;
     height: auto;
@@ -29,7 +34,7 @@ header, footer {
     background-color: #87AAAA;
     border-radius: 15px;
     text-align: center;
-    padding: 10px;
+    
     color: white;
 }
 
@@ -62,3 +67,41 @@ nav a:hover {
     background-color: #F6EABE;
 }
 
+table {
+    width: 90%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+td {
+    text-align: center;
+}
+
+.color_palette_img {
+    display: block;
+    height: 300px;
+    width: auto;
+    border: 5px solid #87AAAA;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header_sample {
+    background-color: #87AAAA;
+    color: white;
+}
+
+.nav_sample{
+    background-color: #C8E3D4;
+}
+
+.footer_nav {
+    background-color: #87AAAA;
+    color: white;
+}

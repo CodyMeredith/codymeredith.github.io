@@ -1,0 +1,9 @@
+@media (min-width: 60em) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+    }
+}
