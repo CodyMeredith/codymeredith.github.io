@@ -1,0 +1,64 @@
+header, nav, main, footer {
+    font-family: "Roboto", serif;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+header img {
+    width: 200px;
+    height: auto;
+}
+
+header, footer {
+    background-color: #87AAAA;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+nav {
+    background-color: #C8E3D4;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+   
+}
+
+nav ul li a {
+    color: black;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #F6EABE;
+}
+
