@@ -1,0 +1,116 @@
+    
+    header, nav, footer {
+        font-family: "Roboto", serif;
+        margin: 0 auto;
+    }
+    
+    main {
+        max-width: 1000px;
+        font-family: "Roboto", serif;
+        margin: 0 auto;
+    }
+    
+    h1 {
+        font-family: 'Lora', serif;
+        font-size: 30px;
+        text-shadow: 2px 2px gray;
+    }
+    
+    h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    h3 {
+        font-size: 15px;
+    }
+    
+    p {
+        font-size: 10px;
+    }
+ 
+    
+    .contentbox {
+        background-color: #ccc;
+        border: 1px dashed;
+        margin: 10px 0;
+        padding: 5px;
+    }
+
+    header img {
+        width: 100px;
+        height: auto;
+    }
+    
+    header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .headings {
+        text-align: center;
+        align-self: center;
+        
+      
+    }
+    
+    header, footer {
+        background-color: #3D56B2;
+        text-align: center;
+        color: white;
+    }
+    
+    nav {
+        background-color: #14279B;
+        display: block;
+        padding: 8px 0;
+    }
+    
+    nav button {
+        margin: .2rem 2%;
+        background-color: transparent;
+        border: none;
+        font-size: 1.6rem;
+        color: #fff;
+    }
+
+    nav ul.hide {
+        display: none;
+    }
+
+    nav ul li {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+       
+    }
+    
+    nav ul li a {
+        color: white;
+        text-align: center;
+        padding: 0.75rem 2%;
+        text-decoration: none;
+        font-size: 1.2rem;
+        display: block;
+    }
+    
+    nav a:hover {
+        background-color: #E6E6E6;
+        color: #14279B;
+    }
+
+    nav ul li.active a {
+        background-color: rgba(0,0,0,0.2);
+        color: #fff;
+    }
+    
+    footer a {
+        color: white;
+    }
+
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }

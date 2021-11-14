@@ -1,12 +1,29 @@
-header, nav, main, footer {
+body {
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5c7aea+0,e6e6e6+100 */
+background: #5c7aea; /* Old browsers */
+background: -moz-linear-gradient(top,  #5c7aea 0%, #e6e6e6 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #5c7aea 0%,#e6e6e6 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #5c7aea 0%,#e6e6e6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c7aea', endColorstr='#e6e6e6',GradientType=0 ); /* IE6-9 */
+
+}
+
+header, nav, footer {
     font-family: "Roboto", serif;
-    max-width: 900px;
     margin: 0 auto;
-    background-color: #F6EABE;
+    
+}
+
+main {
+    max-width: 1000px;
+    font-family: "Roboto", serif;
+    margin: 0 auto;
 }
 
 h1 {
-    font-size: 30px;
+    font-family: 'Lora', serif;
+    font-size: 60px;
+    text-shadow: 2px 2px gray;
 }
 
 h2 {
@@ -23,6 +40,9 @@ p {
 
 section {
     padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px 0;
 }
 
 header img {
@@ -30,21 +50,30 @@ header img {
     height: auto;
 }
 
-header, footer {
-    background-color: #87AAAA;
-    border-radius: 15px;
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.headings {
     text-align: center;
+    align-self: center;
     
+  
+}
+
+header, footer {
+    background-color: #3D56B2;
+    text-align: center;
     color: white;
 }
 
 nav {
-    background-color: #C8E3D4;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    
+    background-color: #14279B;
+    display: block;
+    padding: 8px 0;
 }
+
 
 nav ul li {
     list-style-type: none;
@@ -55,16 +84,17 @@ nav ul li {
 }
 
 nav ul li a {
-    color: black;
+    color: white;
 	text-align: center;
 	padding: 0.75rem;
 	text-decoration: none;
-	font-size: 0.95rem;
+	font-size: 1.2rem;
     display: block;
 }
 
 nav a:hover {
-    background-color: #F6EABE;
+    background-color: #E6E6E6;
+    color: #14279B;
 }
 
 table {
@@ -86,22 +116,27 @@ td {
     display: block;
     height: 300px;
     width: auto;
-    border: 5px solid #87AAAA;
+    border: 5px solid #14279B;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-left: auto;
     margin-right: auto;
 }
 
 .header_sample {
-    background-color: #87AAAA;
+    background-color: #3D56B2;
     color: white;
 }
 
 .nav_sample{
-    background-color: #C8E3D4;
+    background-color: #14279B;
+    color: white;
 }
 
 .footer_nav {
-    background-color: #87AAAA;
+    background-color: #3D56B2;
+    color: white;
+}
+
+footer a {
     color: white;
 }
