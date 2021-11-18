@@ -16,3 +16,13 @@ try {
 } catch (e) {
     alert("Error with code or your browser does not support Locale");
 }
+
+function showBanner() {
+    const d = new Date().getDay();
+    if (d === 5) {
+        document.getElementById("pancakeBanner").style.display = "block"
+    }
+    else if (d !== 5) {
+        document.getElementById("pancakeBanner").style.display = "none"
+    }
+}

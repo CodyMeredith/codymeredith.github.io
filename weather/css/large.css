@@ -25,16 +25,19 @@
         display: flex;
     }
 
-    /* nav ul {
+    nav ul {
         margin-left: 2%;
-    } */
+    }
 
     nav ul li {
         display: flex;
         flex: 1 1 auto;
     }
 
-    
+    nav ul li a:active {
+        color: yellow;
+        text-decoration: underline;
+    }
 
     header img {
         width: 200px;
