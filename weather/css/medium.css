@@ -38,4 +38,24 @@
         width: 150px;
         height: auto;
     }
+
+    .summarySection {
+        position: relative;
+    }
+
+    .weatherSummary {
+        position: absolute;
+        bottom: 5rem;
+        left: 5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border: 1px solid #E6E6E6;
+        background-color: #14279B;
+        color: #E6E6E6;
+        grid-gap: .5rem;
+        box-shadow: 0 0 30px #333;
+        background: radial-gradient(#5c7aea, #14279B);
+        opacity: .9;
+        width: 40%;
+    }
 }
