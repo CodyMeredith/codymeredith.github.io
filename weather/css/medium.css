@@ -58,4 +58,35 @@
         opacity: .9;
         width: 40%;
     }
+
+    .forecast_img {
+        width: 70px;
+        height: auto;
+    }
+
+    .forecast {
+        display: grid;
+        grid-template-columns: repeat(5 1fr);
+        justify-content: center;
+        grid-gap: 2rem;
+        grid-auto-columns: minmax(100px, auto);
+    }
+
+    .gridHeadline {
+        grid-column: 1/6;
+    }
+
+    .grid_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #333;
+    }
+
+    .grid_item h3 {
+        background-color: #14279B;
+        color: #E6E6E6;
+        width: 100%;
+    }
 }
