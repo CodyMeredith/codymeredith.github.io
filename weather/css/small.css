@@ -76,7 +76,7 @@
         background-color: #3D56B2;
         text-align: center;
         color: white;
-        padding: 10px 0;
+        
     }
     
     nav {
@@ -190,4 +190,28 @@
     .articleText {
         line-height: 1.1rem;
         padding: 0 1rem;
+    }
+
+    .contactInfo {
+        background-color: #14279B;
+        padding: 1rem;
+    }
+
+    .grid2 {
+        text-align: left;
+    }
+
+    .icon {
+        width: 20px;
+        background-color: #E6E6E6;
+        border-radius: 10px;
+        margin-right: 1rem;
+    }
+
+    .social_icon {
+        width: 20px;
+    }
+
+    .map_img {
+        max-width: 90%;
     }
