@@ -82,11 +82,23 @@
         align-items: center;
         justify-content: center;
         border: 1px solid #333;
+        background-color: #E6E6E6;
     }
 
     .grid_item h3 {
         background-color: #14279B;
         color: #E6E6E6;
         width: 100%;
+    }
+
+    .article_img {
+        float: right;
+        max-width: 50%;
+        margin: .7rem;
+        box-shadow: 0 0 15px #333;
+    }
+
+    .articleText {
+        line-height: 2.5rem;
     }
 }

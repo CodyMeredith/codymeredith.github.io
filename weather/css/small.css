@@ -173,3 +173,21 @@
     .forecast {
         display: none;
     }
+
+    .article {
+        margin-top: 1.5rem;
+    }
+
+    .articleTitle {
+        text-align: left;
+        padding: 1rem;
+    }
+
+    .article_img {
+        max-width: 100%;
+    }
+
+    .articleText {
+        line-height: 1.1rem;
+        padding: 0 1rem;
+    }
