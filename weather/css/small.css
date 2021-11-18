@@ -10,10 +10,15 @@
         margin: 0 auto;
     }
     
+    main h1 {
+        color: #e6e6e6;
+        text-shadow: 2px 2px rgb(0, 0, 0);
+    }
+
     h1 {
         font-family: 'Lora', serif;
         font-size: 30px;
-        text-shadow: 2px 2px gray;
+        text-shadow: 2px 2px rgb(0, 0, 0);
     }
     
     h2 {
@@ -129,6 +134,11 @@
     .hero_img {
         width: 100%;
         height: auto;
+        box-shadow: 0 0 30px #333;
+    }
+
+    .forecast {
+        margin-top: 1.5rem;
     }
 
     .summarySection {

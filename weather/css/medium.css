@@ -39,6 +39,10 @@
         height: auto;
     }
 
+    .hero_img {
+        border-radius: 10px;
+    }
+
     .summarySection {
         position: relative;
     }
@@ -70,6 +74,7 @@
         justify-content: center;
         grid-gap: 2rem;
         grid-auto-columns: minmax(100px, auto);
+        margin-bottom: 3rem;
     }
 
     .gridHeadline {
