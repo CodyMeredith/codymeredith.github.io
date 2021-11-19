@@ -31,13 +31,10 @@
 
     nav ul li {
         display: flex;
-        flex: 1 1 auto;
+        flex: 1 1;
     }
 
-    nav ul li a:active {
-        color: yellow;
-        text-decoration: underline;
-    }
+    
 
     header img {
         width: 200px;

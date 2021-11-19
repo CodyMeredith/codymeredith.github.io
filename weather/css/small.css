@@ -11,14 +11,14 @@
     }
     
     main h1 {
-        color: #e6e6e6;
-        text-shadow: 2px 2px rgb(0, 0, 0);
+        color: #000000;
+        text-shadow: 2px 2px #e6e6e6;
     }
 
     h1 {
         font-family: 'Lora', serif;
         font-size: 30px;
-        text-shadow: 2px 2px rgb(0, 0, 0);
+        text-shadow: 2px 2px gray;
     }
     
     h2 {
@@ -26,6 +26,10 @@
         text-align: center;
         margin: 0;
         padding: .5rem 0;
+    }
+
+    header h2 {
+        text-shadow: 2px 2px gray;
     }
     
     h3 {
@@ -81,7 +85,6 @@
         background-color: #3D56B2;
         text-align: center;
         color: white;
-        
     }
     
     nav {
@@ -119,6 +122,11 @@
         background-color: #E6E6E6;
         color: #14279B;
         transition: 0.5s;
+    }
+
+    .active {
+        color: yellow;
+        text-decoration: underline;
     }
     
     footer a {
