@@ -140,6 +140,7 @@
       }
 
     .hero_img {
+        display: block;
         width: 100%;
         height: auto;
         box-shadow: 0 0 30px #333;
@@ -151,6 +152,7 @@
 
     .summarySection {
         position: relative;
+        width: 100%;
     }
 
     .weatherSummary {
@@ -233,3 +235,9 @@
     .map_img {
         max-width: 90%;
     }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }

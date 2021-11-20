@@ -27,7 +27,7 @@
             <h2 class="headings">Weather when you need it</h2>
         </div>
     </header>
-    <nav id="nav">
+    <nav id="nav" class="clearfix">
         <button onclick="toggleMenu()">&#9776; Menu</button>
         <ul id="primaryNav" class="hide">
             <li class="navList"><a href="preston.html">Home</a></li>
@@ -41,7 +41,12 @@
     <main>
         <h1>Preston Idaho</h1>
         <div class="summarySection">
-            <img class="hero_img" src="images/preston_hero.jpg" alt="church behind a field">
+            <picture>
+                <source class="hero_img" media="(min-width: 1px) and (max-width: 400px)" srcset="images/preston_hero400.jpg">
+                <source class="hero_img" media="(min-width: 401px) and (max-width: 800px)" srcset="images/preston_hero800.jpg">
+                <source class="hero_img" media="(min-width: 801px) and (max-width: 1200px)" srcset="images/preston_hero1200.jpg">
+                <img class="hero_img" src="images/preston_hero.jpg" alt="field with sunshine">
+            </picture>
             <div class="weatherSummary">
                 <h3>Weather Summary</h3>
                 <div class="leftData">
@@ -88,39 +93,64 @@
                 <img class="forecast_img" src="images/snow_cloud.png" alt="snow">
                 <h4>35 &deg;F</h4>
             </div>
-            
+
         </div>
 
         <section class="article">
             <h2 class="articleTitle">Christmas Tree Cutting Permits Now Available</h2>
             <p class="articleText"><em>Press Release Caribou-Targhee National Forest</em></p>
             <img class="article_img" src="images/christmas_tree.jpg" alt="lit tree in front of other trees">
-            <p class="articleText">Christmas tree permits are now available to purchase online through recreation.gov until December 31. Details regarding designated cutting areas, dates and height restrictions may be found at recreation.gov. Last year, the Forest sold 8,732 permits and over 30% were from online sales.<br>
+            <p class="articleText">Christmas tree permits are now available to purchase online through recreation.gov
+                until December 31. Details regarding designated cutting areas, dates and height restrictions may be
+                found at recreation.gov. Last year, the Forest sold 8,732 permits and over 30% were from online
+                sales.<br>
                 <br>
-                “For every tree that is found, cut and carried home as a holiday fixture, a new story is created,” said USDA Forest Service Chief Randy Moore. “These stories become the precious memories that create traditions worth carrying on for generations and further connect families with their local forests.”<br>
+                “For every tree that is found, cut and carried home as a holiday fixture, a new story is created,” said
+                USDA Forest Service Chief Randy Moore. “These stories become the precious memories that create
+                traditions worth carrying on for generations and further connect families with their local forests.”<br>
                 <br>
-                To purchase a Christmas Tree permit, visit Recreation.gov and search for Caribou-Targhee National Forest Christmas Tree Permits. It is important to carefully read the overview and need-to-know information prior to purchasing the permit. Visitors will also need to set up or login to a Recreation.gov account to complete the transaction. Permits are $15 for trees up to 20 feet tall and limited to one per household. An additional fee is applied when using recreation.gov.<br>
+                To purchase a Christmas Tree permit, visit Recreation.gov and search for Caribou-Targhee National Forest
+                Christmas Tree Permits. It is important to carefully read the overview and need-to-know information
+                prior to purchasing the permit. Visitors will also need to set up or login to a Recreation.gov account
+                to complete the transaction. Permits are $15 for trees up to 20 feet tall and limited to one per
+                household. An additional fee is applied when using recreation.gov.<br>
                 <br>
-                Permits are still available through local ranger district offices and participating vendor locations. Please call ahead for the options available to purchase your Christmas tree permit at local ranger district offices. Working with external vendors allows the Forest to offer permits during weekend and evening hours. Most Forest Service offices are closed on federal holidays and weekends. Vendor locations, as well as safety tips and how to properly care for your tree can be found on our website at https://go.usa.gov/x7BJh.<br>
+                Permits are still available through local ranger district offices and participating vendor locations.
+                Please call ahead for the options available to purchase your Christmas tree permit at local ranger
+                district offices. Working with external vendors allows the Forest to offer permits during weekend and
+                evening hours. Most Forest Service offices are closed on federal holidays and weekends. Vendor
+                locations, as well as safety tips and how to properly care for your tree can be found on our website at
+                https://go.usa.gov/x7BJh.<br>
                 <br>
-                “For many, venturing out into the Forest to find the “perfect” tree, is a long-standing family tradition,” said Tom Silvey, Timber Program Manager. “Just remember that weather changes quickly in the area and road conditions can deteriorate, so we encourage to harvest your tree as soon as possible.” Many Forest roads are subject to seasonal closures. Know where you can go by downloading your free Motorized Vehicle Use Map at www.fs.usda.gov/ctnf/ and adhere to the Christmas tree cutting guidelines and maps.<br>
+                “For many, venturing out into the Forest to find the “perfect” tree, is a long-standing family
+                tradition,” said Tom Silvey, Timber Program Manager. “Just remember that weather changes quickly in the
+                area and road conditions can deteriorate, so we encourage to harvest your tree as soon as possible.”
+                Many Forest roads are subject to seasonal closures. Know where you can go by downloading your free
+                Motorized Vehicle Use Map at www.fs.usda.gov/ctnf/ and adhere to the Christmas tree cutting guidelines
+                and maps.<br>
                 <br>
-                The Every Kid Outdoors provides one free Christmas Tree permit to any fourth grader who presents a valid Every Kid Outdoor pass. Please keep in mind this offer can only be validated through the local Forest Service and recreation.gov site. Vendors are unable to provide free passes. The Every Kid in a Park initiative allows fourth graders to go to the Every Kid in the Park web site and obtain a pass for free entry for them and their families to more than 2,000 federally managed lands and waters for an entire year starting September 1, 2021.
+                The Every Kid Outdoors provides one free Christmas Tree permit to any fourth grader who presents a valid
+                Every Kid Outdoor pass. Please keep in mind this offer can only be validated through the local Forest
+                Service and recreation.gov site. Vendors are unable to provide free passes. The Every Kid in a Park
+                initiative allows fourth graders to go to the Every Kid in the Park web site and obtain a pass for free
+                entry for them and their families to more than 2,000 federally managed lands and waters for an entire
+                year starting September 1, 2021.
             </p>
-            
+
         </section>
 
     </main>
     <footer>
         <div class="contactInfo">
             <div><img class="map_img" src="images/preston_map.png" alt="map"></div>
-            <div class="grid2"><h3>Contact Information</h3>
-            <p><img class="icon" src="images/pin.png" alt="pin icon">123 Happy Street, Preston, ID 83646</p>
-            <p><img class="icon" src="images/email.png" alt="email icon">info@townofpreston.com</p>
-            <p><img class="icon" src="images/phone.png" alt="phone icon">208-555-0123</p>
-            <a href=""><img class="social_icon" src="images/facebook_icon.png" alt="facebook_icon"></a>
-            <a href=""><img class="social_icon" src="images/instagram_icon.png" alt="instagram_icon"></a>
-            <a href=""><img class="social_icon" src="images/twitter_icon.png" alt="twitter_icon"></a>
+            <div class="grid2">
+                <h3>Contact Information</h3>
+                <p><img class="icon" src="images/pin.png" alt="pin icon">123 Happy Street, Preston, ID 83646</p>
+                <p><img class="icon" src="images/email.png" alt="email icon">info@townofpreston.com</p>
+                <p><img class="icon" src="images/phone.png" alt="phone icon">208-555-0123</p>
+                <a href=""><img class="social_icon" src="images/facebook_icon.png" alt="facebook_icon"></a>
+                <a href=""><img class="social_icon" src="images/instagram_icon.png" alt="instagram_icon"></a>
+                <a href=""><img class="social_icon" src="images/twitter_icon.png" alt="twitter_icon"></a>
             </div>
         </div>
         <div class="indented">
