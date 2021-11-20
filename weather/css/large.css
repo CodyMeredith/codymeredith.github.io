@@ -22,19 +22,24 @@
     }
 
     nav ul.hide {
-        display: flex;
+        display: inline;
     }
 
-    nav ul {
-        margin-left: 2%;
+    nav ul li a {
+        display: block;
+        padding: 2rem;
     }
 
     nav ul li {
-        display: flex;
-        flex: 1 1;
+        float: left;
+        
     }
 
-    
+    nav ul li a:hover {
+        background-color: #E6E6E6;
+        color: #14279B;
+        transition: 0.5s;
+    }    
 
     header img {
         width: 200px;

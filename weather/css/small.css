@@ -90,7 +90,7 @@
     nav {
         background-color: #14279B;
         display: block;
-        padding: 8px 0;
+        /* padding: 8px 0; */
     }
     
     nav button {
@@ -112,21 +112,29 @@
     
     nav ul li a {
         color: white;
-        padding: 0.75rem 2%;
+        /* padding: 0.75rem 2%; */
         text-decoration: none;
         font-size: 1.2rem;
         display: block;
     }
 
-    nav li a:hover {
+    nav ul li:hover {
         background-color: #E6E6E6;
         color: #14279B;
         transition: 0.5s;
     }
 
+    nav ul li a {
+        display: block;
+    }
+
     .active {
-        color: yellow;
+        background-color: #3D56B2;
         text-decoration: underline;
+    }
+
+    .active, a {
+        color: #14279B;
     }
     
     footer a {
