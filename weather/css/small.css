@@ -13,6 +13,7 @@
     main h1 {
         color: #000000;
         text-shadow: 2px 2px #e6e6e6;
+        padding-left: 1.5rem;
     }
 
     h1 {
@@ -249,3 +250,20 @@
         clear: both;
         display: table;
       }
+
+    .galleryGrid {
+        max-width: 1300px;
+        display: block
+    }
+
+    .galleryGrid figure img {
+        max-width: 100%;
+    }
+
+    figcaption {
+        background-color: #E6E6E6;
+        color: black;
+        font-style: italic;
+        padding: 1rem;
+        max-width: 100%;
+    }

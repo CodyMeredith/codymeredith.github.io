@@ -134,4 +134,20 @@
         grid-column: 2/3;
         grid-row: 1/2;   
     }
+
+    .galleryGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        max-width: 100%;
+    }
+
+    figcaption {
+        max-width: 100%;
+    }
+
+    figure img {
+        width: 700px;
+        height: 300px;
+    }
 }

@@ -46,4 +46,18 @@
         height: auto;
     }
 
+    .galleryGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2rem;
+        max-width: 100%;
+    }
+
+    figcaption {
+        max-width: 100%;
+    }
+
+    figure:hover {
+        box-shadow: 0 0 50px #333;
+    }
 }
