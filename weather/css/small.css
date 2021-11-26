@@ -4,6 +4,10 @@
         margin: 0 auto;
     }
     
+    body {
+        margin: 0;
+    }
+
     main {
         max-width: 1300px;
         font-family: "Roboto", serif;
