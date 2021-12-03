@@ -249,10 +249,6 @@
         max-width: 90%;
     }
 
-    .wireframes {
-        
-    }
-
     .clearfix::after {
         content: "";
         clear: both;
@@ -340,13 +336,45 @@
         border-left: green solid 6px;
     }
 
+    /*---------HOME STORY-----------*/
+    .homeStory {
+        background-color: #e6e6e6;
+        border: 1px solid #14279B;
+        border-radius: .5rem;
+        padding: 1rem;
+    }
+
+    .homeStory h1, .homeStory h2 {
+        text-align: center;
+        color: #14279B;
+    }
+
+    .homeStory p, ul {
+        font-size: 1.2rem;
+        color: #14279B;
+    }
+
+    .homeStory br {
+        margin: 5rem 0;
+    }
+
+    .homeStoryImage {
+        max-width: 80%;
+        border-radius: .5rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .imageDiv {
+        text-align: center;
+    }
+
     /*----------- CARDS ------------*/
 
     .cards {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: .5rem;
-        padding: .5rem .1rem;
+        padding: .5rem 0;
     }
     
     .cards section {
