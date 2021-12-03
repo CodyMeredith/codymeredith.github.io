@@ -9,9 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap" rel="stylesheet">
     <link href="/codymeredith.github.io/normalize.css" rel="stylesheet">
-    <link href="/codymeredith.github.io/weather/css/small.css" rel="stylesheet">
-    <link href="/codymeredith.github.io/weather/css/medium.css" rel="stylesheet">
-    <link href="/codymeredith.github.io/weather/css/large.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
     <title>Preston - Weather</title>
 </head>
 
@@ -21,7 +21,7 @@
         <h3>9:00am Saturday at the City Park Pavillion</h3>
     </aside>
     <header>
-        <img src="/codymeredith.github.io/weather/images/weather_icon.png" alt="sun icon">
+        <img src="images/weather_icon.png" alt="sun icon">
         <div class="headings">
             <h1>Your Weather Update</h1>
             <h2 class="headings">Weather when you need it</h2>
@@ -38,33 +38,41 @@
             <li class="navList"><a href="/codymeredith.github.io/weather/gallery-7.html">Gallery</a></li>
         </ul>
     </nav>
+
     <main>
-        
+        <div class="cards"></div>
 
     </main>
     <footer>
         <div class="contactInfo">
-            <div><img class="map_img" src="/codymeredith.github.io/weather/images/preston_map.png" alt="map"></div>
+            <div><img class="map_img" src="images/preston_map.png" alt="map"></div>
             <div class="grid2">
                 <h3>Contact Information</h3>
-                <p><img class="icon" src="/codymeredith.github.io/weather/images/pin.png" alt="pin icon">123 Happy Street, Preston, ID 83646</p>
-                <p><img class="icon" src="/codymeredith.github.io/weather/images/email.png" alt="email icon">info@townofpreston.com</p>
-                <p><img class="icon" src="/codymeredith.github.io/weather/images/phone.png" alt="phone icon">208-555-0123</p>
-                <a href=""><img class="social_icon" src="/codymeredith.github.io/weather/images/facebook_icon.png" alt="facebook_icon"></a>
-                <a href=""><img class="social_icon" src="/codymeredith.github.io/weather/images/instagram_icon.png" alt="instagram_icon"></a>
-                <a href=""><img class="social_icon" src="/codymeredith.github.io/weather/images/twitter_icon.png" alt="twitter_icon"></a>
+                <p><img class="icon" src="images/pin.png" alt="pin icon">123 Happy Street, Preston, ID 83646</p>
+                <p><img class="icon" src="images/email.png" alt="email icon">info@townofpreston.com</p>
+                <p><img class="icon" src="images/phone.png" alt="phone icon">208-555-0123</p>
+                <a href=""><img class="social_icon" src="images/facebook_icon.png" alt="facebook_icon"></a>
+                <a href=""><img class="social_icon" src="images/instagram_icon.png" alt="instagram_icon"></a>
+                <a href=""><img class="social_icon" src="images/twitter_icon.png" alt="twitter_icon"></a>
             </div>
         </div>
         <div class="indented">
             <p>&copy;<span id="current_year"></span> | Cody M. Meredith | Idaho | <a href="https://www.byui.edu/online"
                     target="_blank">BYUI Online Learning</a></p>
         </div>
+        <div class="wireframes">
+            <p>Wireframes:
+            <a href="https://wireframe.cc/ljRR8m" target="_blank">Large |</a>
+            <a href="https://wireframe.cc/ODyoia" target="_blank">Medium |</a>
+            <a href="https://wireframe.cc/BMTUQI" target="_blank">Small</a></p>
+        </div>
         <div class="last_updated">
             <span id="last_updated"></span>
         </div>
     </footer>
-    <script src="/codymeredith.github.io/weather/js/scripts.js"></script>
-    <script src="/codymeredith.github.io/weather/js/windchill.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/home.js"></script>
 </body>
 
 </html>
