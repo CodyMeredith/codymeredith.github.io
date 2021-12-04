@@ -335,3 +335,8 @@
     form label.top input:required:valid {
         border-left: green solid 6px;
     }
+
+    #ratingvalue {
+        margin: 0 15px;
+        color: #2075ff;
+    }

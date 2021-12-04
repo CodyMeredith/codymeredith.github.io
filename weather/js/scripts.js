@@ -36,3 +36,7 @@ for (var i = 0; i < btns.length; i++) {
   this.className += " active";
   });
 }
+
+function adjustRating(rating) {
+    document.getElementById("ratingvalue").innerHTML = rating;
+}
