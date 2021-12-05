@@ -1,0 +1,74 @@
+@media (min-width: 64rem) {
+
+    h1 {
+        font-size: 60px;
+    }
+    
+    h2 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+    
+    p {
+        font-size: 20px;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: inline;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 2rem;
+    }
+
+    nav ul li {
+        float: left;
+        
+    }
+
+    nav ul li a:hover {
+        background-color: #E6E6E6;
+        color: #14279B;
+        transition: 0.5s;
+    }    
+
+    header img {
+        width: 200px;
+        height: auto;
+    }
+
+    .galleryGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2rem;
+        max-width: 100%;
+    }
+
+    figcaption {
+        max-width: 100%;
+    }
+
+    figure:hover {
+        box-shadow: 0 0 50px #333;
+    }
+
+    /*-------- FORM --------*/
+    form label.sbs {
+        padding: .4rem 0;
+    }
+
+    form textarea {
+        background-color: #E6E6E6;
+        border-radius: 10px;
+        padding: .5rem;
+    }
+}
