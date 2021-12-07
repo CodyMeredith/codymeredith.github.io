@@ -8,11 +8,6 @@ fetch(weatherURL)
     document.getElementById('currentTemp').innerText = Math.round(jsObject.main.temp);
     document.getElementById('windSpeed').innerText = jsObject.wind.speed;
     document.getElementById('humidity').innerText = jsObject.main.humidity;
-    // const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
-    // const desc = jsObject.weather[0].description;  // note how we reference the weather array
-    // document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
-    // document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
-    // document.getElementById('icon').setAttribute('alt', desc);
   });
 
   let temperature = document.getElementById("currentTemp").innerText;
@@ -32,16 +27,29 @@ fetch(forecastURL)
 .then((jsonObject) => {
     console.log(jsonObject);
 
-    const forecast = [];
+    const domForecastOutput = document.getElementById("forecastContent");
+    const forecast = jsonObject.list.filter(item => item.dt_txt.includes("18:00:00")).forEach(item => {
+        const d = new Date(0);
+        d.setUTCSeconds(item.dt)
+        const weekday = d.toLocaleDateString("en-US", {weekday: "short"});
+
+        domForecastOutput.insertAdjacentHTML("beforeend", `
+        <div class="grid_item">
+                <h3>${weekday}</h3>
+                <img class="forecast_img" src="http://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png" alt="sunny">
+                <h4 class="weatherDescription">${item.weather[0].description}</h4>
+                <h4 class="forecastTemperature">${Math.round(item.main.temp)}\u00B0</h4>
+            </div>
+        `)
+        // return {
+        //     ...item, 
+        //     weekday
+        // }
+    });
+
+
     
-    for (let i = 0; i < jsonObject.length; i++ ) {
-        if ("18:00:00" in jsonObject) {
-            forecast.push(jsonObject);
-            console.log(forecast);
             // document.getElementById('forecastDay1').textContent = jsonObject.list[0].clouds.dt_txt;
-        }
-        
-    };
 
     
 

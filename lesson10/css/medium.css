@@ -10,9 +10,9 @@
 
     section {
         padding: 2rem;
-        background-color: white;
+        background-color: #e6e6e6;
         border-radius: 10px;
-        margin: 10px;
+        margin: 2rem 0;
     }
 
     h1 {
@@ -79,6 +79,8 @@
 
     .gridHeadline {
         grid-column: 1/6;
+        font-size: 3rem;
+        text-shadow: 2px 2px gray;
     }
 
     .grid_item {
@@ -87,19 +89,35 @@
         align-items: center;
         justify-content: center;
         border: 1px solid #333;
-        background-color: #E6E6E6;
+        background: radial-gradient(#5c7aea, #14279B);
+        color: #E6E6E6;
+        border-radius: 10px;
+    }
+
+    .weatherDescription {
+        margin: 0;
+        text-transform: capitalize;
+        color: yellow;
+        letter-spacing: 1px;
+        font-size: 1.1rem;
+    }
+
+    .forecastTemperature {
+        letter-spacing: 1px;
+        font-size: 1.3rem;
     }
 
     .grid_item h3 {
-        background-color: #14279B;
-        color: #E6E6E6;
+        color: #14279B;
+        background-color: #E6E6E6;
         width: 100%;
+        border-radius: 10px 10px 0 0;
     }
 
     .article_img {
         float: right;
         max-width: 50%;
-        margin: .7rem;
+        margin: 1rem;
         box-shadow: 0 0 15px #333;
     }
 
