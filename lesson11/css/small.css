@@ -201,6 +201,7 @@
         color: yellow;
         font-weight: bold;
         grid-row: 2/3;
+        text-transform: capitalize;
     }
 
     .forecast {
