@@ -1,4 +1,4 @@
-const weatherURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=9afc0f107923b2b648c5af033cf74905&lang=en&units=imperial"
+const weatherURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=9afc0f107923b2b648c5af033cf74905&lang=en&units=imperial"
 
 fetch(weatherURL)
   .then((response) => response.json())
@@ -20,7 +20,7 @@ fetch(weatherURL)
           document.getElementById("windChill").innerText = "N/A"
       }
 
-const forecastURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=9afc0f107923b2b648c5af033cf74905&lang=en&units=imperial"
+const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=9afc0f107923b2b648c5af033cf74905&lang=en&units=imperial"
 
 fetch(forecastURL)
 .then((response) => response.json())
