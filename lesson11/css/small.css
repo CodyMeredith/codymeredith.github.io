@@ -20,10 +20,6 @@
         padding-left: 1.5rem;
     }
 
-    main h2 {
-        color: #14279B;
-    }
-
     h1 {
         font-family: 'Lora', serif;
         font-size: 30px;
@@ -166,7 +162,7 @@
     .forecast {
         margin-top: 1.5rem;
     }
-/*------- WEATHER SUMMARY -----------*/
+
     .summarySection {
         position: relative;
         width: 100%;
@@ -207,10 +203,6 @@
         grid-row: 2/3;
     }
 
-    #currentConditions {
-        text-transform: capitalize;
-    }
-
     .forecast {
         display: none;
     }
@@ -231,9 +223,8 @@
     .articleText {
         line-height: 1.1rem;
         padding: 0 1rem;
-        color: #14279B;
     }
-
+/* ------- FOOTER ---------*/
     .contactInfo {
         background-color: #14279B;
         padding: 1rem;
@@ -266,19 +257,22 @@
 
     .galleryGrid {
         max-width: 1300px;
-        display: block
+        display: block;        
     }
 
     .galleryGrid figure img {
         max-width: 100%;
+        border-radius: 10px 10px 0 0;
     }
 
     figcaption {
-        background-color: #E6E6E6;
-        color: black;
+        background-color: #14279B;
+        color: white;
         font-style: italic;
         padding: 1rem;
+        margin-top: -.5rem;
         max-width: 100%;
+        border-radius: 0 0 10px 10px;
     }
 
     /*----------- FORM ------------*/
@@ -345,7 +339,81 @@
         border-left: green solid 6px;
     }
 
-    #ratingvalue {
-        margin: 0 15px;
-        color: #2075ff;
+    .textArea {
+        background-color: white;
+    }
+
+    /*---------HOME STORY-----------*/
+    .homeStory {
+        background-color: #e6e6e6;
+        border: 1px solid #14279B;
+        border-radius: .5rem;
+        padding: 1rem;
+    }
+
+    .homeStory h1, .homeStory h2 {
+        text-align: center;
+        color: #14279B;
+    }
+
+    .homeStory p, ul {
+        font-size: 1.2rem;
+        color: #14279B;
+    }
+
+    .homeStory br {
+        margin: 5rem 0;
+    }
+
+    .homeStoryImage {
+        max-width: 80%;
+        border-radius: .5rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .imageDiv {
+        text-align: center;
+    }
+
+    /*----------- CARDS ------------*/
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: .5rem;
+        padding: .5rem 0;
+    }
+    
+    .cards section {
+        display: grid;
+        padding: 1rem;
+        max-width: 100%;
+        border-radius: .5rem;
+        justify-content: center;
+        background-color: #e6e6e6;
+        border: 1px solid #14279B;
+    }
+   
+    .cards img {
+        max-width: 100%;
+        border-radius: .5rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .cards h2 {
+        font-size: 3rem;
+        color: #14279B;
+    }
+
+    .cards p {
+        font-size: .9rem;
+        margin: .3rem;
+        text-align: center;
+        color: #14279B;
+        text-shadow: 0 0 15px #e6e6e6;
+    }
+
+    .motto {
+        font-size: 1.1rem;
+        font-style: oblique;
     }

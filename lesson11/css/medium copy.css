@@ -1,4 +1,4 @@
-@media (min-width: 35rem) {
+@media (min-width: 35rem) and (max-width: 63.9rem) {
     body {
         /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5c7aea+0,e6e6e6+100 */
         background: #5c7aea; /* Old browsers */
@@ -10,9 +10,9 @@
 
     section {
         padding: 2rem;
-        background-color: #e6e6e6;
+        background-color: white;
         border-radius: 10px;
-        margin: 2rem 0;
+        margin: 10px;
     }
 
     h1 {
@@ -79,8 +79,6 @@
 
     .gridHeadline {
         grid-column: 1/6;
-        font-size: 3rem;
-        text-shadow: 2px 2px gray;
     }
 
     .grid_item {
@@ -89,41 +87,24 @@
         align-items: center;
         justify-content: center;
         border: 1px solid #333;
-        background: radial-gradient(#5c7aea, #14279B);
-        color: #E6E6E6;
-        border-radius: 10px;
-    }
-
-    .weatherDescription {
-        margin: 0;
-        text-transform: capitalize;
-        color: yellow;
-        letter-spacing: 1px;
-        font-size: 1.1rem;
-    }
-
-    .forecastTemperature {
-        letter-spacing: 1px;
-        font-size: 1.3rem;
+        background-color: #E6E6E6;
     }
 
     .grid_item h3 {
-        color: #14279B;
-        background-color: #E6E6E6;
+        background-color: #14279B;
+        color: #E6E6E6;
         width: 100%;
-        border-radius: 10px 10px 0 0;
     }
 
     .article_img {
         float: right;
         max-width: 50%;
-        margin: 1rem;
+        margin: .7rem;
         box-shadow: 0 0 15px #333;
     }
 
     .articleText {
         line-height: 2.5rem;
-        color: #14279B;
     }
 
     .contactInfo {
@@ -151,7 +132,7 @@
 
     .grid2 {
         grid-column: 2/3;
-        grid-row: 1/2;   
+        grid-row: 1/2;
     }
 
     .galleryGrid {
@@ -168,5 +149,33 @@
     figure img {
         width: 700px;
         height: 300px;
+    }
+
+    /*----------- CARDS ------------*/
+
+    .cards section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cards section:nth-child(odd) img {
+        grid-column: 2;
+        grid-row: 1/6;
+    }
+
+    .cards section:nth-child(odd) p {
+        grid-column: 1;
+    }
+
+    .cards section:nth-child(even) img {
+        grid-column: 1;
+        grid-row: 1/6;
+    }
+
+    .cards section:nth-child(even) p {
+        grid-column: 2;
+    }
+    
+    .cards img {
+        width: 100%;
     }
 }

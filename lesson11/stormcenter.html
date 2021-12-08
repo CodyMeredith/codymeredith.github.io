@@ -39,6 +39,7 @@
         </ul>
     </nav>
     <main>
+        <section>
         <h1>Report A Storm</h1>
         <form method="get" action="thanks.html">
             <fieldset>
@@ -47,7 +48,7 @@
                         required></label>
                 <label class="top">Email <input type="email" name="email" placeholder="myemail@gmail.com"></label>
                 <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" pattern="[0-9]{10}" required></label>
-                <label class="top">Zip Code* <input type="text" name="zipcode" pattern="[0-9]" required></label>
+                <label class="top">Zip Code* <input type="text" name="zipcode" pattern="[0-9]{5}" required></label>
             </fieldset>
 
             <fieldset>
@@ -99,13 +100,14 @@
             <fieldset>
                 <legend>Additional Information</legend>
                 <label class="top">Please enter any additional details below</label>
-                <textarea name="additionalDetails" rows="10" cols="30" placeholder="Enter comments here"></textarea>
+                <textarea class="textArea" name="additionalDetails" rows="10" cols="30" placeholder="Enter comments here"></textarea>
             </fieldset>
 
 
             <input type="submit" value="Send My Report" class="submitBtn">
 
         </form>
+    </section>
     </main>
     <footer>
         <div class="contactInfo">
