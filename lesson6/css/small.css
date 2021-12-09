@@ -88,9 +88,10 @@
     }
     
     header, footer {
-        background-color: #3D56B2;
+       
         text-align: center;
         color: white;
+        background: radial-gradient(#5c7aea, #14279B);
     }
     
     nav {
