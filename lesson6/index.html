@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap" rel="stylesheet">
+    <link href="/codymeredith.github.io/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <title>Preston - Weather</title>
+</head>
+
+<body>
+    <aside id="pancakeBanner">
+        <h2>Preston Pancakes in the Park!</h2>
+        <h3>9:00am Saturday at the City Park Pavillion</h3>
+    </aside>
+    <header>
+        <img src="images/weather_icon.png" alt="sun icon">
+        <div class="headings">
+            <h1>Your Weather Update</h1>
+            <h2 class="headings">Weather when you need it</h2>
+        </div>
+    </header>
+    <nav id="nav" class="clearfix">
+        <button onclick="toggleMenu()">&#9776; Menu</button>
+        <ul id="primaryNav" class="hide">
+            <li class="navList active"><a href="index.html">Home</a></li>
+            <li class="navList"><a href="preston.html">Preston</a></li>
+            <li class="navList"><a href="#">Soda Springs</a></li>
+            <li class="navList"><a href="#">Fish Haven</a></li>
+            <li class="navList"><a href="stormcenter.html">Storm Center</a></li>
+            <li class="navList"><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        
+        <div class="cards"></div>
+        <section class="homeStory">
+            <h1>Boise non-profit seeking winter weather clothing, equipment for homeless community</h1>
+            <h2>CATCH, a local non-profit, is asking for donations to keep those experiencing homelessness warm this winter.</h2>
+            <div class="imageDiv"><img class="homeStoryImage" src="images/homeless.jpg" alt="sleeping bags in a pile"></div>
+            <p>BOISE, Idaho — The Boise non-profit CATCH is asking for donations this winter to keep people experiencing homelessness warm and safe as the temperatures begin to drop.<br>
+                <br>
+                Boise's homeless population is growing, according to Interfaith Sanctuary Executive Director Jodi Peterson-Stigers. This is a problem when her shelter, like others, has limited space. 
+                She said that she sometimes has to turn away as many as 20 people in need.<br>
+                <br>
+                "It's a significant amount that are not able to be served by our shelter," Peterson-Stigers said. "So that's really hard for us and the demand is higher."<br>
+                <br>
+                As a result, many people facing homelessness must prepare for the worst: sleeping outside in freezing temperatures.<br>
+                <br>
+                "I do it every night," Frederick Hardt said. "You gotta dress properly. You gotta wear everything you got pretty much to stay warm."<br>
+                <br>
+                Hardt has been homeless for five years. Without the proper winter gear, freezing to death is a real danger. However, getting ahold of this gear isn't an easy task for some.<br>
+                <br>
+                Angel Summers and her boyfriend Jeffrey Jensen experienced this first-hand.<br>
+                <br>
+                "St. Vincent de Paul has a program and I got a voucher. And we went to one of the stores and the shelves are just - there aren't coats to choose from," Summers said. 
+                "Until I find a coat, just layer up like I have been, wear as many long sleeve shirts as I can. Try to stay moving. Try to stay busy. Drink warm stuff. Do the best you can."<br>
+                <br>
+                It’s for these exact reasons CATCH is making a push for donations. It's an annual effort, but this year's donations are down compared to the past years, according to CATCH Street 
+                Outreach Director Jette Curtis.<br>
+                <br>
+                "The need is huge right now," Curtis said. "So, there's a little bit of urgency."<br>
+                <br>
+                CATCH is asking for donations of the following items:</p>
+                <ul>
+                    <li>Warm hats</li>
+                    <li>Scarves</li>
+                    <li>Socks</li>
+                    <li>Gloves</li>
+                    <li>Outdoor coats</li>
+                    <li>Hand warmers</li>
+                    <li>Thermal underwear (long johns)</li>
+                    <li>Tarps</li>
+                    <li>Blankets</li>
+                    <li>Flashlights</li>
+                    <li>Backpacks</li>
+                    <li>Small propane bottles</li>
+                    <li>Gift cards to grocery stores and gas stations</li>
+                </ul>
+                <p>Donations can be dropped off at the temporary CATCH office at Catholic Charities of Idaho at 7233 W Franklin Rd. 
+                Donations can also be dropped off at their downtown Boise office at 503 S. Americana Boulevard.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <div class="contactInfo">
+            <div><img class="map_img" src="images/preston_map.png" alt="map"></div>
+            <div class="grid2">
+                <h3>Contact Information</h3>
+                <p><img class="icon" src="images/pin.png" alt="pin icon">123 Happy Street, Preston, ID 83646</p>
+                <p><img class="icon" src="images/email.png" alt="email icon">info@townofpreston.com</p>
+                <p><img class="icon" src="images/phone.png" alt="phone icon">208-555-0123</p>
+                <a href=""><img class="social_icon" src="images/facebook_icon.png" alt="facebook_icon"></a>
+                <a href=""><img class="social_icon" src="images/instagram_icon.png" alt="instagram_icon"></a>
+                <a href=""><img class="social_icon" src="images/twitter_icon.png" alt="twitter_icon"></a>
+            </div>
+        </div>
+        <div class="indented">
+            <p>&copy;<span id="current_year"></span> | Cody M. Meredith | Idaho | <a href="https://www.byui.edu/online"
+                    target="_blank">BYUI Online Learning</a></p>
+        </div>
+        <div class="wireframes">
+            <p>Wireframes:
+            <a href="https://wireframe.cc/ljRR8m" target="_blank">Large |</a>
+            <a href="https://wireframe.cc/ODyoia" target="_blank">Medium |</a>
+            <a href="https://wireframe.cc/BMTUQI" target="_blank">Small</a></p>
+        </div>
+        <div class="last_updated">
+            <span id="last_updated"></span>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>
