@@ -80,6 +80,7 @@
     .gridHeadline {
         grid-column: 1/6;
         font-size: 3rem;
+        color: #14279B;
         text-shadow: 2px 2px gray;
     }
 
@@ -122,7 +123,8 @@
     }
 
     .articleText {
-        line-height: 2.5rem;
+        font-size: 1.3rem;
+        line-height: 2rem;
         color: #14279B;
     }
 
@@ -168,5 +170,80 @@
     figure img {
         width: 700px;
         height: 300px;
+    }
+
+    /*------ HOME PAGE ARTICLE & IMAGE -------*/
+    .imageDiv {
+        text-align: center;
+    }
+
+    .homeStoryImage {
+        max-width: 60%;
+        float: right;
+        max-width: 50%;
+        margin: 1rem;
+        box-shadow: 0 0 15px #333;
+    }
+
+    .subHeading {
+        margin: 1rem;
+        font-style: italic;
+    }
+
+    /* ------- EVENTS ---------*/
+    .eventsDiv {
+        color: white;
+        text-align: center;
+        margin: 1.5rem 5rem;
+        border: 3px solid #5c7aea;
+        border-radius: .5rem;
+        background: radial-gradient(#5c7aea, #14279B);
+    }
+
+    .eventsDiv p {
+        font-size: 1.3rem;
+    }
+
+    /*----------- CARDS ------------*/
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: .5rem;
+        padding: .5rem 0;
+    }
+    
+    .cards section {
+        display: grid;
+        padding: 1rem;
+        max-width: 100%;
+        border-radius: .5rem;
+        justify-content: center;
+        background-color: #e6e6e6;
+        
+    }
+    
+    .cards img {
+        max-width: 100%;
+        border-radius: .5rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .cards h2 {
+        font-size: 3rem;
+        color: #14279B;
+    }
+
+    .cards p {
+        font-size: .9rem;
+        margin: .3rem;
+        text-align: center;
+        color: #14279B;
+        text-shadow: 0 0 15px #e6e6e6;
+    }
+
+    .cards .motto {
+        font-size: 1.3rem;
+        font-style: oblique;
     }
 }

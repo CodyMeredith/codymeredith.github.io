@@ -1,3 +1,4 @@
+//PRESTON//
 const weatherURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=9afc0f107923b2b648c5af033cf74905&lang=en&units=imperial"
 
 fetch(weatherURL)
@@ -41,21 +42,39 @@ fetch(forecastURL)
                 <h4 class="forecastTemperature">${Math.round(item.main.temp)}\u00B0</h4>
             </div>
         `)
-        // return {
-        //     ...item, 
-        //     weekday
-        // }
     });
-
-
-    
-            // document.getElementById('forecastDay1').textContent = jsonObject.list[0].clouds.dt_txt;
-
-    
-
-    // const imagesrc = 'https://openweathermap.org/img/w/' + jsonObject.weather[0].icon + '.png';  // note the concatenation
-    // const desc = jsonObject.weather[0].description;  // note how we reference the weather array
-    // document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
-    // document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
-    // document.getElementById('icon').setAttribute('alt', desc);
 });
+
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(requestURL)
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (jsonObject) {
+        console.table(jsonObject);  // temporary checking for valid response and data parsing
+
+        const towns = jsonObject['towns'];
+        
+        for (let i = 0; i < towns.length; i++ ) {
+            if (towns[i].name === 'Preston') {                
+                let card = document.createElement('div');
+                let h2 = document.createElement('h2');
+                let p1 = document.createElement('p');
+                let p2 = document.createElement('p');
+                let p3 = document.createElement('p');
+               
+                h2.textContent = "Coming Events";
+                p1.textContent = towns[i].events[0];
+                p2.textContent = towns[i].events[1];
+                p3.textContent = towns[i].events[2];
+                
+                card.appendChild(h2);
+                card.appendChild(p1);
+                card.appendChild(p2);
+                card.appendChild(p3);
+                
+                document.querySelector('div.eventsDiv').appendChild(card);
+        }
+    }   
+    });
