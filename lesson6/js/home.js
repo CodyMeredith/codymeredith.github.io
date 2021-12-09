@@ -72,7 +72,7 @@ fetch(requestURL)
                 p2.textContent = 'Year Founded: ' + towns[i].yearFounded;
                 p3.textContent = 'Population: ' + towns[i].currentPopulation;
                 p4.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall;
-                image.setAttribute('src', 'https://picsum.photos/id/1043/400/300');
+                image.setAttribute('src', 'images/fish_haven_hero400.jpg');
                 card.appendChild(h2);
                 card.appendChild(p1);
                 card.appendChild(p2);
