@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;700&display=swap" rel="stylesheet">
+    <link href="/codymeredith.github.io/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <title>Scoots - Scooter Rentals</title>
+</head>
+
+<body>
+    <!--HEADER WITH LOGO-->
+    <header>
+        <div class="logo">
+        <img src="images/logo.png" alt="scoots logo">
+        </div>
+    </header>
+        <!--NAV BAR-->
+        <nav id="nav" class="clearfix nav_bar">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li class="navList active"><a href="index.html">Home</a></li>
+                <li class="navList"><a href="rentals.html">Rentals</a></li>
+                <li class="navList"><a href="reservations.html">Reservations</a></li>
+                <li class="navList"><a href="tours.html">Tours</a></li>
+                <li class="navList"><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    
+    <main>
+        <!--HERO IMAGE SECTION-->
+        <section class="image_right_grid">
+            <h1>Welcome to Cozumel!</h1>
+            <p>Let us help you create an unforgettable adventure for the whole family</p>
+            <button class="reserve_button">Reserve Now!</button>
+            <img src="images/cozumel_hero.jpg">
+        </section>
+        <!--RENTAL SUMMARY SECTION-->
+        <section class="image_left_grid">
+            <img src="images/building_shot.jpg">
+            <h1>Available Rentals</h1>
+            <h3>Honda Motor Scooters</h3>
+            <ul>
+                <li>Honda Pioneer 1000</li>
+                <li>Honda Dio (110cc)—2 person</li>
+                <li>Honda PCX150 (149cc)—2 person</li>
+            </ul>
+            <h3>ATV Side-by-Side</h3>
+            <ul>
+                <li>Honda Pioneer 1000</li>
+            </ul>
+            <h3>Jeep Rentals</h3>
+            <ul>
+                <li>4-door Jeep Wrangler—manual with A/C—5 people max</li>
+                <li>2-door Jeep Wrangler—open air—manual—4 people max</li>
+            </ul>
+            <button class="reserve_button">Reserve Now!</button>
+        </section>
+        <!--CURRENT WEATHER SUMMARY-->
+        <section>
+            <img src="images/sand_santa.jpg">
+            <h1>Check Out the Weather</h1>
+            <div class="leftData">
+                <p>Skies: </p>
+                <p>Current Temperature: </p>
+                <p>Humidity: </p>
+            </div>
+            <div class="rightData">
+                <p><span id="currentConditions"></span></p>
+                <p><span id="currentTemp"></span>&deg;F</p>
+                <p><span id="humidity"></span>%</p>
+            </div>
+            <button class="reserve_button">Reserve Now!</button>
+        </section>
+        <!--5-DAY FORECAST-->
+        <section>
+            <div class="forecast" id="forecastContent">
+                <h2 class="gridHeadline">5 Day Forecast</h2>
+            </div>
+            <button class="reserve_button">Reserve Now!</button>
+        </section>
+    </main>
+    <!--FOOTER-->
+    <footer>
+        <div class="contact_info">
+            <p><img class="icon" src="images/phone.png" alt="phone icon">+52 987 989 0126</p>
+            <p><img class="icon" src="images/pin.png" alt="pin icon">Carretera costera sur km 4 mas 230 #1300 local 3, sur, Zona Hotelera Nte., 77600 San Miguel de Cozumel, Q.R., Mexico</p>
+            <p><img class="icon" src="images/map.png" alt="map icon">Areas Served: Cozumel</p>
+        </div>
+        <div class="indented">
+            <p>&copy;<span id="current_year"></span>
+            <p>Weather information and forecasts obtains from <a href="https://openweathermap.org/">Open Weather Map</a></p>
+        </div>
+        <div class="last_updated">
+            <span id="last_updated"></span>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+header, nav, footer {
+    font-family: 'Baloo Bhaijaan 2', serif;
+}
+
+body {
+    margin: 0;
+    background-color: #FAEEE0;
+}
+
+main {
+    max-width: 1300px;
+    font-family: 'Baloo Bhaijaan 2', serif;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: #E02401;
+}
+
+header {
+    display: flex;
+}
+
+.logo {
+   margin: auto;
+}
+
+/*---NAV BAR---*/
+nav {
+    background-color: #E02401;
+    display: block;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #FAEEE0;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+nav ul li {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+ nav ul li a {
+    color: #FAEEE0;
+    text-decoration: none;
+    font-size: 2rem;
+    display: block;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.active a {
+    background-color: #FAEEE0;
+    color: #E02401;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

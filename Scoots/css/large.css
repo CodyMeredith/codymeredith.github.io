@@ -1,0 +1,56 @@
+@media (min-width: 64rem) {
+
+    header img {
+        width: 300px;
+        height: auto;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: inline;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 2rem;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul {
+        list-style-type: none;
+        font-size: 2rem;
+    }
+
+    nav li a {
+        display: block;
+        color: #E02401;
+        text-align: center;
+        padding: 1rem;
+        text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        background-color: #F9CF93;
+        color: #E02401;
+        transition: 0.4s;
+    }
+
+    .active a {
+        background-color: #F9CF93;
+        color: #E02401;
+        text-decoration: underline;
+    }
+
+    .nav_bar {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+    }
+    
+}
