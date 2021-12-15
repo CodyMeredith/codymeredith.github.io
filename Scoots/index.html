@@ -19,9 +19,9 @@
     <!--HEADER WITH LOGO-->
     <header>
         <div class="logo">
-        <img src="images/logo.png" alt="scoots logo">
+            <img src="images/logo.png" alt="scoots logo">
         </div>
-    </header>
+
         <!--NAV BAR-->
         <nav id="nav" class="clearfix nav_bar">
             <button onclick="toggleMenu()">&#9776; Menu</button>
@@ -33,57 +33,69 @@
                 <li class="navList"><a href="contact_us.html">Contact Us</a></li>
             </ul>
         </nav>
-    
+    </header>
     <main>
         <!--HERO IMAGE SECTION-->
-        <section class="image_right_grid">
+        <section class="image_right_grid hero_section">
             <h1>Welcome to Cozumel!</h1>
+            <img class="homepage_img" src="images/cozumel_hero.jpg">
             <p>Let us help you create an unforgettable adventure for the whole family</p>
             <button class="reserve_button">Reserve Now!</button>
-            <img src="images/cozumel_hero.jpg">
+
         </section>
         <!--RENTAL SUMMARY SECTION-->
-        <section class="image_left_grid">
-            <img src="images/building_shot.jpg">
+        <section class="image_left_grid rentals_section">
             <h1>Available Rentals</h1>
+            <img class="homepage_img" src="images/building_shot.jpg">
             <h3>Honda Motor Scooters</h3>
+            <img class="rental_image" src="images/metro_scooter.jpeg">
             <ul>
-                <li>Honda Pioneer 1000</li>
+                <li>Honda Metropolitan (49cc)—1 person</li>
                 <li>Honda Dio (110cc)—2 person</li>
                 <li>Honda PCX150 (149cc)—2 person</li>
             </ul>
+
             <h3>ATV Side-by-Side</h3>
+            <img class="rental_image" src="images/pioneer_action.jpg">
             <ul>
                 <li>Honda Pioneer 1000</li>
             </ul>
+
             <h3>Jeep Rentals</h3>
+            <img class="rental_image" src="images/jeep_driving.jpg">
             <ul>
                 <li>4-door Jeep Wrangler—manual with A/C—5 people max</li>
                 <li>2-door Jeep Wrangler—open air—manual—4 people max</li>
             </ul>
+
+            <br>
             <button class="reserve_button">Reserve Now!</button>
         </section>
         <!--CURRENT WEATHER SUMMARY-->
         <section>
-            <img src="images/sand_santa.jpg">
-            <h1>Check Out the Weather</h1>
-            <div class="leftData">
-                <p>Skies: </p>
-                <p>Current Temperature: </p>
-                <p>Humidity: </p>
-            </div>
-            <div class="rightData">
-                <p><span id="currentConditions"></span></p>
-                <p><span id="currentTemp"></span>&deg;F</p>
-                <p><span id="humidity"></span>%</p>
+            <h1>Current Weather Conditions</h1>
+            <img class="homepage_img" src="images/sand_santa.jpg">
+            <div class="weather_summary">
+                <div class="leftData">
+                    <p>Skies: </p>
+                    <p>Current Temperature: </p>
+                    <p>Humidity: </p>
+                </div>
+                <div class="rightData">
+                    <p><span id="currentConditions"></span></p>
+                    <p><span id="currentTemp"></span>&deg;F</p>
+                    <p><span id="humidity"></span>%</p>
+                </div>
+                
             </div>
             <button class="reserve_button">Reserve Now!</button>
         </section>
         <!--5-DAY FORECAST-->
         <section>
             <div class="forecast" id="forecastContent">
-                <h2 class="gridHeadline">5 Day Forecast</h2>
+                <h1 class="gridHeadline">5 Day Forecast</h1>
             </div>
+            <br>
             <button class="reserve_button">Reserve Now!</button>
         </section>
     </main>
@@ -91,18 +103,25 @@
     <footer>
         <div class="contact_info">
             <p><img class="icon" src="images/phone.png" alt="phone icon">+52 987 989 0126</p>
-            <p><img class="icon" src="images/pin.png" alt="pin icon">Carretera costera sur km 4 mas 230 #1300 local 3, sur, Zona Hotelera Nte., 77600 San Miguel de Cozumel, Q.R., Mexico</p>
+            <p><img class="icon" src="images/pin.png" alt="pin icon">Carretera costera sur km 4 mas 230 #1300 local 3,
+                sur, Zona Hotelera Nte., 77600 San Miguel de Cozumel, Q.R., Mexico</p>
             <p><img class="icon" src="images/map.png" alt="map icon">Areas Served: Cozumel</p>
+            <a href=""><img class="social_icon" src="images/facebook_icon.png" alt="facebook_icon"></a>
+            <a href=""><img class="social_icon" src="images/instagram_icon.png" alt="instagram_icon"></a>
+            <a href=""><img class="social_icon" src="images/twitter_icon.png" alt="twitter_icon"></a>
         </div>
-        <div class="indented">
-            <p>&copy;<span id="current_year"></span>
-            <p>Weather information and forecasts obtains from <a href="https://openweathermap.org/">Open Weather Map</a></p>
-        </div>
+        <div class="bottom">
+            <p>&copy;<span id="current_year"></span> | Cody Meredith | WDD230
+                <p>Weather information and forecasts obtained from <a href="https://openweathermap.org/">Open Weather
+                        Map</a></p>
+        
         <div class="last_updated">
             <span id="last_updated"></span>
         </div>
+    </div>
     </footer>
     <script src="js/scripts.js"></script>
+    <script src="js/weatherapi.js"></script>
 </body>
 
 </html>

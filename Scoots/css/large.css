@@ -1,8 +1,26 @@
 @media (min-width: 64rem) {
 
-    header img {
-        width: 300px;
-        height: auto;
+    header {
+        position: relative;
+        display: flex;
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+        background-color: #E02401;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        flex: 0;
+        align-self: stretch;
+        height: 200px;
+    }
+
+    .nav_bar {
+        flex: 1;
+        width: 100%;
+        align-self: center;
     }
 
     nav button {
@@ -16,6 +34,7 @@
     nav ul li a {
         display: block;
         padding: 2rem;
+        font-size: 1.75rem;
     }
 
     nav ul li {
@@ -24,7 +43,6 @@
 
     nav ul {
         list-style-type: none;
-        font-size: 2rem;
     }
 
     nav li a {
@@ -45,12 +63,6 @@
         background-color: #F9CF93;
         color: #E02401;
         text-decoration: underline;
-    }
-
-    .nav_bar {
-        position: -webkit-sticky; /* Safari */
-        position: sticky;
-        top: 0;
     }
     
 }
