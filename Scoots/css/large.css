@@ -6,13 +6,13 @@
         position: -webkit-sticky; /* Safari */
         position: sticky;
         top: 0;
-        background-color: #E02401;
+        background-image: linear-gradient(to bottom,rgb(250, 238, 224,1), rgb(250, 238, 224,0));
+        z-index: 1;
     }
 
     .logo {
         display: flex;
         align-items: center;
-        flex: 0;
         align-self: stretch;
         height: 200px;
     }
@@ -64,5 +64,99 @@
         color: #E02401;
         text-decoration: underline;
     }
+
+    section {
+        margin: 3rem 0;
+    }
+    
+    /*---TOP SECTION---*/
+    .image_right_grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .image_right_grid h1 {
+        font-size: 5rem;
+        grid-column: 1/4;
+        grid-row: 1/2;
+        align-self: center;
+    }
+
+    .image_right_grid h2 {
+        font-size: 3rem;
+        grid-column: 1/4;
+        grid-row: 2/3;
+        align-self: start;
+    }
+
+    .image_right_grid p {
+        font-size: 2.5rem;
+        color: #E02401;
+        grid-column: 1/4;
+        grid-row: 3/4;
+        align-self: start;
+        text-shadow: 1px 1px 2px #FAEEE0;
+    }
+
+    .image_right_grid button {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        justify-self: stretch;
+        align-self: center;
+    }
+
+    .image_right_grid img {
+        z-index: -1;
+        grid-column: 1/4;
+        grid-row-start: 1;
+        grid-row-end: span 3;
+    }
+
+    .homepage_img {
+        border-radius: 5px;
+    }
+
+    /*---MIDDLE SECTION---*/
+    .image_left_grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+        margin: 5rem;
+        grid-gap: 1rem;
+    }
+
+    .image_left_grid h1 {
+        font-size: 4rem;
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
+    .image_left_grid img {
+        grid-column: 1/4;
+        grid-row: 2/3;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .rental_image {
+        max-height: 130px;
+    }
+
+    .rental_grid_item h3 {
+        grid-row: 2/3;
+    }
+
+    .rental_grid_item img {
+        grid-column: 3/4;
+        width: 50%;
+    }
+
+    .image_left_grid button {
+        grid-column: 2/3;
+        grid-row: 4/5;
+        justify-self: center;
+        align-self: center;
+    }
+
     
 }

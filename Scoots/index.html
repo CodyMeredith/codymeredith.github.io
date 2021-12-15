@@ -39,7 +39,8 @@
         <section class="image_right_grid hero_section">
             <h1>Welcome to Cozumel!</h1>
             <img class="homepage_img" src="images/cozumel_hero.jpg">
-            <p>Let us help you create an unforgettable adventure for the whole family</p>
+            <h2>Stop by SCOOTS Vehicle Rentals</h2>
+            <p>Creating unforgettable adventures for the whole family</p>
             <button class="reserve_button">Reserve Now!</button>
 
         </section>
@@ -47,26 +48,30 @@
         <section class="image_left_grid rentals_section">
             <h1>Available Rentals</h1>
             <img class="homepage_img" src="images/building_shot.jpg">
-            <h3>Honda Motor Scooters</h3>
-            <img class="rental_image" src="images/metro_scooter.jpeg">
-            <ul>
-                <li>Honda Metropolitan (49cc)—1 person</li>
-                <li>Honda Dio (110cc)—2 person</li>
-                <li>Honda PCX150 (149cc)—2 person</li>
-            </ul>
-
-            <h3>ATV Side-by-Side</h3>
-            <img class="rental_image" src="images/pioneer_action.jpg">
-            <ul>
-                <li>Honda Pioneer 1000</li>
-            </ul>
-
-            <h3>Jeep Rentals</h3>
-            <img class="rental_image" src="images/jeep_driving.jpg">
-            <ul>
-                <li>4-door Jeep Wrangler—manual with A/C—5 people max</li>
-                <li>2-door Jeep Wrangler—open air—manual—4 people max</li>
-            </ul>
+            <div class="rental_grid_item">
+                <h3>Honda Motor Scooters</h3>
+                <img class="rental_image" src="images/metro_scooter.jpeg">
+                <ul>
+                    <li>Honda Metropolitan (49cc)—1 person</li>
+                    <li>Honda Dio (110cc)—2 person</li>
+                    <li>Honda PCX150 (149cc)—2 person</li>
+                </ul>
+            </div>
+            <div class="rental_grid_item">
+                <h3>Jeep Rentals</h3>
+                <img class="rental_image" src="images/jeep_driving.jpg">
+                <ul>
+                    <li>4-door Jeep Wrangler—manual with A/C—5 people max</li>
+                    <li>2-door Jeep Wrangler—open air—manual—4 people max</li>
+                </ul>
+            </div>
+            <div class="rental_grid_item">
+                <h3>ATV Side-by-Side</h3>
+                <img class="rental_image" src="images/pioneer_action.jpg">
+                <ul>
+                    <li>Honda Pioneer 1000</li>
+                </ul>
+            </div>
 
             <br>
             <button class="reserve_button">Reserve Now!</button>
@@ -74,8 +79,9 @@
         <!--CURRENT WEATHER SUMMARY-->
         <section>
             <h1>Current Weather Conditions</h1>
-            <img class="homepage_img" src="images/sand_santa.jpg">
-            <div class="weather_summary">
+            <div class="weather_container">
+            <img class="homepage_img weather_summary_img" src="images/sand_santa.jpg">
+            <div class="weather_summary large_weather_summary">
                 <div class="leftData">
                     <p>Skies: </p>
                     <p>Current Temperature: </p>
@@ -86,8 +92,9 @@
                     <p><span id="currentTemp"></span>&deg;F</p>
                     <p><span id="humidity"></span>%</p>
                 </div>
-                
+
             </div>
+        </div>
             <button class="reserve_button">Reserve Now!</button>
         </section>
         <!--5-DAY FORECAST-->
@@ -114,11 +121,11 @@
             <p>&copy;<span id="current_year"></span> | Cody Meredith | WDD230
                 <p>Weather information and forecasts obtained from <a href="https://openweathermap.org/">Open Weather
                         Map</a></p>
-        
-        <div class="last_updated">
-            <span id="last_updated"></span>
+
+                <div class="last_updated">
+                    <span id="last_updated"></span>
+                </div>
         </div>
-    </div>
     </footer>
     <script src="js/scripts.js"></script>
     <script src="js/weatherapi.js"></script>
