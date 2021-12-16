@@ -21,7 +21,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 p {
@@ -44,12 +44,13 @@ section {
 }
 
 .reserve_button {
-    background: radial-gradient(#F9CF93, #E02401);
+    background: #E02401;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     border-color: #FAEEE0;
     border-radius: 5px;
     color: white;
-    padding: .5rem 1.5rem;
+    padding: .5rem 5rem;
+    font-size: 2rem;
 }
 
 /*---NAV BAR---*/
@@ -101,11 +102,6 @@ nav ul li {
 .homepage_img {
     max-width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.hero_section h1 {
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 4px #000000;
 }
 
 /*--RENTAL SUMMARY SECTION--*/
@@ -207,4 +203,129 @@ nav ul li {
 .attractions p {
     margin: .5rem;
     line-height: 1.5rem;
+}
+
+/*----------- RESERVATION PAGE ------------*/
+.rental_agreement {
+    font-size: 1.2rem;
+}
+
+.rental_agreement li {
+    list-style-type: circle;
+}
+
+/*----------- RESERVATION FORM ------------*/
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #E02401;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #E02401;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: 1.5rem;
+}
+
+form ::placeholder {
+    color: #000;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #000;
+    /* font-size: .8rem; */
+}
+
+form label.top input, form label.top select {
+    /* -webkit-appearance: none; */
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #E02401;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #000;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form input.submitBtn {   
+    background: #E02401;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-color: #FAEEE0;
+    border-radius: 5px;
+    color: white;
+    padding: .5rem 2rem;
+    font-size: 1.5rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+.textArea {
+    background-color: white;
+}
+
+.confirmation {
+    margin: 10rem auto;
+    text-align: center;
+}
+
+.confirmation h1 {
+    font-size: 4rem;
+}
+
+.confirmation h3 {
+    font-size: 3rem;
+}
+
+.confirmation_button {
+    margin: 2rem 0;
+}
+
+.confirmation_reserve_button {
+    background: #E02401;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-color: #FAEEE0;
+    border-radius: 5px;
+    color: white;
+    padding: .5rem 3rem;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+/*----------- CONTACT PAGE ------------*/
+iframe {
+    margin: 1rem;
+    max-width: 95%;
+}
+
+/*----------- RENTALS PAGE ------------*/
+.data_table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 2rem .2rem;
+}
+
+.data_table, td, th {
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.data_table th {
+    background-color: #E02401;
+    color: #FAEEE0;
+}
+
+.data_table img {
+    width: 50px;
 }

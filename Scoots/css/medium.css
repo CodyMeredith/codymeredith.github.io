@@ -1,6 +1,8 @@
 @media (min-width: 35rem) {
 
-    
+    h1 {
+        font-size: 5rem;
+    }    
 
     .weather_container {
         position: relative;
@@ -78,4 +80,22 @@
         width: 100%;
         border-radius: 10px 10px 0 0;
     }
+
+    /*----------- RENTALS PAGE ------------*/
+   
+
+    th, td {
+        padding: 15px;
+        text-align: center;
+    }
+
+    tr:hover {
+        background-color: #F9CF93;
+        color: #E02401;
+    }
+
+    .data_table img {
+        width: 10rem;
+    }
+
 }

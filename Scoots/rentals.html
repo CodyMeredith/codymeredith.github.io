@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;700&display=swap" rel="stylesheet">
+    <link href="/codymeredith.github.io/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <title>Scoots - Rentals</title>
+</head>
+
+<body>
+    <!--HEADER WITH LOGO-->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="scoots logo"></a>
+        </div>
+
+        <!--NAV BAR-->
+        <nav id="nav" class="clearfix nav_bar">
+            <button onclick="toggleMenu()">&#9776; Menu</button>
+            <ul id="primaryNav" class="hide">
+                <li class="navList"><a href="index.html">Home</a></li>
+                <li class="navList active"><a href="rentals.html">Rentals</a></li>
+                <li class="navList"><a href="reservations.html">Reservations</a></li>
+                <li class="navList"><a href="tours.html">Tours</a></li>
+                <li class="navList"><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <h1>Prices and Options</h1>
+        <table class="data_table">
+            <tr>
+                <th colspan="3"></th>
+                <th colspan="2">Reservation</th>
+                <th colspan="2">Walk-In</th>
+            <tr>
+                <th>Rental Type</th>
+                <th>Image</th>
+                <th>Max Persons</th>
+                <th>Half Day (3hrs)</th>
+                <th>Full Day</th>
+                <th>Half Day (3hrs)</th>
+                <th>Full Day</th>
+            </tr>
+            <tr>
+                <td id="rental_type1"></td>
+                <td><img src="images/metro_scooter.jpeg" alt="Honda Metro"></td>
+                <td id="max_persons1"></td>
+                <td id="res_half1"></td>
+                <td id="res_full1"></td>
+                <td id="walk_half1"></td>
+                <td id="walk_full1"></td>
+            </tr>
+            <tr>
+                <td id="rental_type2"></td>
+                <td><img src="images/honda_dio.webp" alt="Honda Dio"></td>
+                <td id="max_persons2"></td>
+                <td id="res_half2"></td>
+                <td id="res_full2"></td>
+                <td id="walk_half2"></td>
+                <td id="walk_full2"></td>
+            </tr>
+            <tr>
+                <td id="rental_type3"></td>
+                <td><img src="images/honda_pcx.jpg" alt="Honda PCX150"></td>
+                <td id="max_persons3"></td>
+                <td id="res_half3"></td>
+                <td id="res_full3"></td>
+                <td id="walk_half3"></td>
+                <td id="walk_full3"></td>
+            </tr>
+            <tr>
+                <td id="rental_type4"></td>
+                <td><img src="images/honda_pioneer.webp" alt="Honda ATV"></td>
+                <td id="max_persons4"></td>
+                <td id="res_half4"></td>
+                <td id="res_full4"></td>
+                <td id="walk_half4"></td>
+                <td id="walk_full4"></td>
+            </tr>
+
+            <tr>
+                <td id="rental_type5"></td>
+                <td><img src="images/jeep_driving.jpg" alt="Jeep Wrangler 4 Door"></td>
+                <td id="max_persons5"></td>
+                <td id="res_half5"></td>
+                <td id="res_full5"></td>
+                <td id="walk_half5"></td>
+                <td id="walk_full5"></td>
+            </tr>
+            <tr>
+                <td id="rental_type6"></td>
+                <td><img src="images/jeep_2door.jpg.crdownload" alt="Jeep Wrangler 2 Door"></td>
+                <td id="max_persons6"></td>
+                <td id="res_half6"></td>
+                <td id="res_full6"></td>
+                <td id="walk_half6"></td>
+                <td id="walk_full6"></td>
+            </tr>
+                 
+              </table>
+
+    </main>
+    <!--FOOTER-->
+    <footer>
+        <div class="contact_info">
+            <img class="footer_map" src="images/cozumel_map.png" alt="Cozumel map">
+            <div class="contact">
+                <p><img class="icon" src="images/phone.png" alt="phone icon">+52 987 989 0126</p>
+                <p><img class="icon" src="images/pin.png" alt="pin icon">Carretera costera sur km 4 mas 230 #1300 local
+                    3,
+                    sur, Zona Hotelera Nte., 77600 San Miguel de Cozumel, Q.R., Mexico</p>
+                <p><img class="icon" src="images/map.png" alt="map icon">Areas Served: Cozumel</p>
+                <a href=""><img class="social_icon" src="images/facebook_icon.png" alt="facebook_icon"></a>
+                <a href=""><img class="social_icon" src="images/instagram_icon.png" alt="instagram_icon"></a>
+                <a href=""><img class="social_icon" src="images/twitter_icon.png" alt="twitter_icon"></a>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>&copy;<span id="current_year"></span> | Cody Meredith | WDD230
+                
+
+                <div class="last_updated">
+                    <span id="last_updated"></span>
+                </div>
+        </div>
+    </footer>
+    <script src="js/rentals.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
