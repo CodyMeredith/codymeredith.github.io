@@ -1,4 +1,4 @@
-fetch("/codymeredith.github.io/Scoots/JSON/rental_data.json")
+fetch("JSON/rental_data.json")
   .then((response) => response.json())
   .then((jsonObject) => {
       console.log(jsonObject);
