@@ -17,12 +17,11 @@ h1, h2, h3 {
     color: #E02401;
     text-align: center;
     margin: 0 .5rem;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 1px 1px 2px #2b2a2a;
 }
 
 h1 {
     font-size: 2.5rem;
-    text-shadow: 2px 2px 4px #000000;
 }
 
 p {
@@ -170,6 +169,10 @@ nav ul li {
 }
 
 /*--FOOTER SECTION--*/
+.footer_map {
+    max-width: 100%;
+}
+
 .contact_info {
     background-color: #E02401;
     color: #FAEEE0;
@@ -193,4 +196,15 @@ nav ul li {
     color: #E02401;
     text-align: center;
     padding: 1rem;
+}
+
+/*-------------TOURS PAGE----------------*/
+.attractions img {
+    max-width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.attractions p {
+    margin: .5rem;
+    line-height: 1.5rem;
 }
